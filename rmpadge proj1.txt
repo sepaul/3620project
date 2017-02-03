@@ -1,4 +1,0 @@
-# for palmetto, this is the output for OS Type.
-echo $OSTYPE =  linux-gnu
-
-#Still working on figuring out how to get the first question solution <richard padgett>
