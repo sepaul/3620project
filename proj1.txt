@@ -18,3 +18,25 @@ For each infrastructure listed, the following information must be included:
 
 	https://www.cloudlab.us/hardware.php#clemson
 	#Above is where to find the answer. I feel like it could be the Wisconson site? Other opinions?
+	Evan - wisconsin sounds right to me
+
+
+
+
+XSEDE
+
+1. URL to the web site of the infrastructure or URL to the installation manual of the selected distributed platform
+   Infrastructure Description: https://www.xsede.org/overview
+   User Guide: https://www.xsede.org/using-xsede
+   
+2. Name of the operating system for all the nodes
+	unix
+
+3. Name of the scheduler
+	Simple Linux Utility for Resource Management (Slurm) job scheduler
+	
+4. Name of the distributed/parallel file systems
+	
+ 
+
+5. Name of the CloudLab site that would best represent this infrastructure. 
