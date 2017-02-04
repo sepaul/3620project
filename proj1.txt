@@ -1,20 +1,20 @@
 For each infrastructure listed, the following information must be included:
 
 1. URL to the web site of the infrastructure or URL to the installation manual of the selected distributed platform
-    # for palmetto, this is the output for OS Type.
-    echo $OSTYPE =  linux-gnu
-
-    #Still working on figuring out how to get the first question solution <richard padgett>
-
+   Infrastructure Description: https://citi.sites.clemson.edu/infrastructure
+   User Guide: https://www.palmetto.clemson.edu/palmetto/pages/userguide.html#overview   
 
 2. Name of the operating system for all the nodes
+	GNU/Linux
 
 3. Name of the scheduler
+	PBS Professional (PBS Pro) Scheduler 
 
 4. Name of the distributed/parallel file systems
-
+	
  
 
 5. Name of the CloudLab site that would best represent this infrastructure. 
 
-
+	https://www.cloudlab.us/hardware.php#clemson
+	#Above is where to find the answer. I feel like it could be the Wisconson site? Other opinions?
