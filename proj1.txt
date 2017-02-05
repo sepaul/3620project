@@ -1,0 +1,45 @@
+
+Clemson Palmetto Cluster
+
+1. URL to the web site of the infrastructure or URL to the installation manual of the selected distributed platform
+   Infrastructure Description: https://citi.sites.clemson.edu/infrastructure
+   User Guide: https://www.palmetto.clemson.edu/palmetto/pages/userguide.html#overview   
+
+2. Name of the operating system for all the nodes
+	GNU/Linux
+
+3. Name of the scheduler
+	PBS Professional (PBS Pro) Scheduler 
+
+4. Name of the distributed/parallel file systems
+	/scratch1 is a parallel file system which will perform better for jobs where multiple processes, across multiple nodes, read or write the same file using parallel I/O routines. /scratch2 and /scratch3 are general purpose file systems. 
+ 
+
+5. Name of the CloudLab site that would best represent this infrastructure. 
+
+	Wisconson's Cloudlab Site
+	(https://www.cloudlab.us/hardware.php#wisconsin)
+	
+
+
+
+
+XSEDE - Stampede Cluster at UT Austin 
+
+1. URL to the web site of the infrastructure or URL to the installation manual of the selected distributed platform
+   Infrastructure Description: https://www.xsede.org/resources/overview
+   User Guide: https://portal.xsede.org/tacc-stampede
+   
+2. Name of the operating system for all the nodes
+	Linux (CentOS)
+
+3. Name of the scheduler
+	Simple Linux Utility for Resource Management (Slurm) job scheduler
+	
+4. Name of the distributed/parallel file systems
+	Global $HOME, $WORK and $SCRATCH storage areas are supported by three Lustre parallel distributed file systems with 76 IO servers.
+
+ 
+
+5. Name of the CloudLab site that would best represent this infrastructure.
+	Clemson Cloud Lab Site 
