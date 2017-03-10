@@ -1,0 +1,11 @@
+Submission requirements:
+
+Each team should only have one submission. A representative of the team should email the instructor via Canvas a notification when all materials have been uploaded to the team's Github repository. The repository must contain the following information:
+
+- The source file for the CloudLab profile (XML if it is manually designed or Python script if it is written using geni-lib)
+
+- The tecnical document with all required sections as described in Documentation.
+
+- A directory containing all log files that demonstrate the successful validation of the deployment. This could include screenshots of executions, records of redirected output (Assignment 4), ...
+
+The email must also contain a link to the instantiated cluster with at least 24 hours left so that the instructor can view and compare the instantiation with information in the technical document. 
