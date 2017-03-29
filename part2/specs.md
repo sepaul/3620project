@@ -11,15 +11,15 @@
 
 
 
-#Palmetto Cluster Comparison 
+# Palmetto Cluster Comparison 
 > A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations. 
 
 
-#Software Infastructure Deployment 
+# Software Infastructure Deployment 
 > A section describing in details how the script(s) work to support the deployment of software infrastructures. If you customize existing work (i.e., the OpenStack default profile for CloudLab), makes sure that the original work is properly cited and that you describe what changes have been made. 
 
 
-#Results and Validation
+# Results and Validation
 >A section describing validation results. 
 
 
