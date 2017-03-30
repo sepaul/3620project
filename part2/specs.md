@@ -4,12 +4,12 @@
 >  A diagram describing the network topology and nodes' distribution for the CloudLab profile. If there are nodes from different CloudLab sites, they must be clearly noted. 
 
 * Descriptions of each Node
-* File System - emulab zen (all) - c220g1
-* Parallel - c22g1
+* File System - emulab zen (all) - c6320
+* Parallel - dss7400
 * large mem1 & 2 - c240g1
-* compute1 - dss7500
-* compute2 - c6320
-* compute3 - c8220
+* compute1 - c220g1
+* compute2 - m400
+* compute3 - x86_64
 * ....
 * ....
 * ....
