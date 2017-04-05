@@ -3,6 +3,17 @@
 
 ![Image of Topology](https://github.com/sepaul/3620project/blob/master/part2/topology.png)
 
+
+| Node  | Hardware  | Site  |
+|---|---|---|
+| usernode  | c220g1  | Wisc  |
+| parallel  | c220g1  | Wisc  |
+| compute1  | c6320  | Clem |
+| compute2  | c4130  | Clem  |
+| compute3  | c6320  | Clem  |
+| largemem1  | c220g1  | Wisc  |
+| largemem2  | c220g1  | Wisc  |
+
 >  A diagram describing the network topology and nodes' distribution for the CloudLab profile. If there are nodes from different CloudLab sites, they must be clearly noted. 
 
 * Descriptions of each Node
