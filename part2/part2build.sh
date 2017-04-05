@@ -24,7 +24,7 @@ while read HOST; do
                                  	            sudo apt-get -y install mpich2      &&
                                  		        sudo apt-get -y install gfortran    &&
                                  		        sudo apt-get -y install g++         &&
-                                 		        sudo apt-get -y install python-mpi4py >> RESULTS
+                                 		        sudo apt-get -y install python-mpi4py >> INSTALL_RESULTS
                                  	           ";
   echo "======================================="
   echo "======================================="
