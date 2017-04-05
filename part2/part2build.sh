@@ -5,9 +5,10 @@
 # NOTE: Put node IP's in a file named ips.txt in same directory as script
 # run script with ./part2build <username>
 
+# Clear the Screen
 clear
 
-# get username from argv[1]
+# Get username from argv[1]
 if [ -z "$1" ]
 then
     echo "ERR! USE ./part2build.sh <username>"
@@ -15,8 +16,6 @@ then
 else
     USERNAME=$1
 fi
-
-
 
 # install required programs for parallel processing
 while read HOST; do
@@ -34,4 +33,3 @@ while read HOST; do
   echo "======================================="
   echo "======================================="
 done < ips.txt
-
