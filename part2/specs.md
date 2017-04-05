@@ -6,13 +6,13 @@
 
 | Node  | Hardware  | Site  |
 |---|---|---|
-| usernode  | c220g1  | Wisc  |
-| parallel  | c220g1  | Wisc  |
-| compute1  | c6320  | Clem |
-| compute2  | c4130  | Clem  |
-| compute3  | c6320  | Clem  |
-| largemem1  | c220g1  | Wisc  |
-| largemem2  | c220g1  | Wisc  |
+| usernode  | c220g1  | Wisconsin  |
+| parallel  | c220g1  | Wisconsin  |
+| compute1  | c6320  | Clemson |
+| compute2  | c4130  | Clemson  |
+| compute3  | c6320  | Clemson  |
+| largemem1  | c220g1  | Wisconsin  |
+| largemem2  | c220g1  | Wisconsin  |
 
 >  A diagram describing the network topology and nodes' distribution for the CloudLab profile. If there are nodes from different CloudLab sites, they must be clearly noted. 
 
