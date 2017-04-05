@@ -1,6 +1,6 @@
 # Network Topology 
 > add image of nodes and network topology 
-![Image of Topology](3620project/part2/topology.png)
+![Image of Topology](https://github.com/sepaul/3620project/blob/master/part2/topology.png)
 
 >  A diagram describing the network topology and nodes' distribution for the CloudLab profile. If there are nodes from different CloudLab sites, they must be clearly noted. 
 
