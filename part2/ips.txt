@@ -1,0 +1,7 @@
+clnode124.clemson.cloudlab.us
+clgpu002.clemson.cloudlab.us
+clnode097.clemson.cloudlab.us
+c220g1-030828.wisc.cloudlab.us 	
+c220g1-030825.wisc.cloudlab.us 	
+c220g1-030826.wisc.cloudlab.us 	
+c220g1-030827.wisc.cloudlab.us
