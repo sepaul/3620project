@@ -14,20 +14,6 @@
 | largemem1  | c220g1  | Wisconsin  |
 | largemem2  | c220g1  | Wisconsin  |
 
->  A diagram describing the network topology and nodes' distribution for the CloudLab profile. If there are nodes from different CloudLab sites, they must be clearly noted. 
-
-* Descriptions of each Node
-* File System - emulab zen (all) - c6320
-* Parallel - dss7400
-* large mem1 & 2 - c240g1
-* compute1 - c220g1
-* compute2 - m400
-* compute3 - x86_64
-* ....
-* ....
-* ....
-
-
 
 #Palmetto Cluster Comparison 
 > A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations. 
