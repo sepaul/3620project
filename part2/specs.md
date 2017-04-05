@@ -3,7 +3,7 @@
 
 ![Image of Topology](https://github.com/sepaul/3620project/blob/master/part2/topology.png)
 
-<center>
+
 | Node  | Hardware  | Site  |
 |---|---|---|
 | usernode  | c220g1  | Wisconsin  |
@@ -13,7 +13,7 @@
 | compute3  | c6320  | Clemson  |
 | largemem1  | c220g1  | Wisconsin  |
 | largemem2  | c220g1  | Wisconsin  |
-</center>
+
 
 #Palmetto Cluster Comparison 
 > A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations. 
