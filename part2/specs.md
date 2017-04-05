@@ -25,6 +25,9 @@ Palmetto Cluster contains 2021 compute nodes and 22528 CPU cores. The nodes cont
 > User Guide: https://www.palmetto.clemson.edu/palmetto/pages/userguide.html#overview 
    
 ### CloudLab Model of Palmetto Cluster 
+The structure of the CloudLab model of Palmetto Cluster was chosen because we had not reviewed networking yet. We chose a LAN that is connected via Ethernet. The Ethernet connection was decided upon because Palmetto Cluster utilizes Myrinet, 10Gbps Ethernet, and Infiniband network interconnects. To simplify our model, we chose Ethernet. 
+
+The nodes were selected to represent a feature we thought was important related to the Palmetto Cluster. First, we chose nodes from Wisconsin and Clemson sites because our group identified the Wisconsin CloudLab structure to be the most similar to Palmetto. This is because of the large memory nodes and various hardwares associated with Wisconsin's architecture. 
 > A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations.
 
 
