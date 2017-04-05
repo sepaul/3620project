@@ -20,18 +20,20 @@ This network topology represents the Clemson University Palmetto Cluster. Our gr
 ### Palmetto Architecture 
 Palmetto Cluster contains 2021 compute nodes and 22528 CPU cores. The nodes contain varying CPU types, memory, network, and disk space. There are 6 large memory nodes that combines to over 38TB of memory. Each user is alloted 100GB of personal storage and the scratch file systems provide space for temporary files. /scratch1 is a parallel file system which performs better for jobs that run multiple processes, across multiple nodes, or read/write the same file using parallel I/O routines. /scratch2 and /scratch3 are general purpose file systems. 
 
-> Infrastructure Description: https://citi.sites.clemson.edu/infrastructure                                                                  > User Guide: https://www.palmetto.clemson.edu/palmetto/pages/userguide.html#overview 
+> Infrastructure Description: https://citi.sites.clemson.edu/infrastructure  
+
+> User Guide: https://www.palmetto.clemson.edu/palmetto/pages/userguide.html#overview 
    
 ### CloudLab Model of Palmetto Cluster 
 > A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations.
 
 
 
-#Software Infastructure Deployment 
+# Software Infastructure Deployment 
 > A section describing in details how the script(s) work to support the deployment of software infrastructures. If you customize existing work (i.e., the OpenStack default profile for CloudLab), makes sure that the original work is properly cited and that you describe what changes have been made. 
 
 
-#Results and Validation
+# Results and Validation
 >A section describing validation results. 
 
 
