@@ -20,12 +20,12 @@ fi
 
 # install required programs for parallel processing
 while read HOST; do
-  echo "" |  ssh -t -p 22 $USERNAME@$HOST      "sudo apt-get update         &&
-                                 	        sudo apt-get install mpich2 &&
-                                 		sudo apt install gfortran   &&
-                                 		sudo apt install g++        &&
-                                 		sudo apt install python-mpi4py >> RESULTS
-                                 	       ";
+  echo "" |  ssh -t -p 22 $USERNAME@$HOST      "sudo apt-get update                 &&
+                                 	            sudo apt-get -y install mpich2      &&
+                                 		        sudo apt-get -y install gfortran    &&
+                                 		        sudo apt-get -y install g++         &&
+                                 		        sudo apt-get -y install python-mpi4py >> RESULTS
+                                 	           ";
   echo "======================================="
   echo "======================================="
   echo " $HOST install complete                "
