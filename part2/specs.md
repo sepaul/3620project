@@ -29,7 +29,10 @@ As a preface to this section, our team would like to note that specific node har
 
 The structure of the CloudLab model of Palmetto Cluster was chosen because we had not reviewed networking yet. We chose a LAN that is connected via Ethernet. The Ethernet connection was decided upon because Palmetto Cluster utilizes Myrinet, 10Gbps Ethernet, and Infiniband network interconnects. To simplify our model, we chose Ethernet. 
 
-The nodes were selected to represent a feature we thought was important related to the Palmetto Cluster. First, we chose nodes from Wisconsin and Clemson sites because our group identified the Wisconsin CloudLab structure to be the most similar to Palmetto. This is because of the large memory nodes and various hardwares associated with Wisconsin's architecture. 
+The nodes were selected to represent a feature we thought was important related to the Palmetto Cluster. First, we chose nodes from Wisconsin and Clemson sites because our group identified the Wisconsin CloudLab structure to be the most similar to Palmetto. This is because of the large memory nodes and various hardwares associated with Wisconsin's architecture.
+
+For our user node, parallel file system node, and large memory nodes we selected the Wisconsin CloudLab c220g1 node setup. Palmetto Cluster contains 6 large memory nodes that sum to over 38TB of memory and we represented this by each large memory node being a c220g1 which contains two 1.2TB 10K RPM 6G SAS SFF HDDs and one Intel DC S3500 480 GB 6G SATA SSDs each. Similarly, Palmetto contains large scratch spaces, specifically scratch1 which is the parallel file system, so we used the c220g1 configuration for this purpose as well. The large storage seemed consistent with the Palmetto Cluster set up and would be beneficial for simulating a need for large data storage.  The decision for the usernode was primarily made because of the availability of the c220g1 nodes. We recognized that Palmetto uses the user node as an entry point and we felt the node did not need a specific configuration, thus the availability/capability of the c220g1 node was used. 
+
 
 c240g1  
 10 nodes (Haswell, 16 core, 14 disks)
