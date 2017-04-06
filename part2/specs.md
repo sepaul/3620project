@@ -40,6 +40,8 @@ Finally, the compute nodes were selected based on variability and availability. 
 | c4130  | Two Intel E5-2683 v3 14-core CPUs at 2.00 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs  |Two Tesla K40m GPUs |
 | c6320  | Two Intel E5-2680 v3 12-core processors at 2.50 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs | N/A |
 
+> Extra CloudLab node information can be found at : http://docs.cloudlab.us/hardware.html
+
 # Software Infastructure Deployment 
 
 The script below is used to set up the software configurations of nodes for parallel processing on the Cloudlab Palmetto Cluster model. For this script to work, you must first be sure to put the node IP's into a file named ip.txt and make sure that it is in the same directory as the script so that it can be read. The script begins by clearing the screen and then getting the username from the command line arguments. If a username cannot be found, then an error will be shown. But, if a username is found, then the script will take that username and ssh into the host. Once this is complete it will run a sudo apt-get -y install on the necessary programs. It will install mpich2, gfortran, g++, and python-mpi4y. It will also check to see if these are already installed and update them if needed. Finally, a message of a successful installation will be presented and the script will be complete. 
