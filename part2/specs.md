@@ -33,48 +33,12 @@ The nodes were selected to represent a feature we thought was important related 
 
 For our user node, parallel file system node, and large memory nodes we selected the Wisconsin CloudLab c220g1 node setup. Palmetto Cluster contains 6 large memory nodes that sum to over 38TB of memory and we represented this by each large memory node being a c220g1 which contains two 1.2TB 10K RPM 6G SAS SFF HDDs and one Intel DC S3500 480 GB 6G SATA SSDs each. Similarly, Palmetto contains large scratch spaces, specifically scratch1 which is the parallel file system, so we used the c220g1 configuration for this purpose as well. The large storage seemed consistent with the Palmetto Cluster set up and would be beneficial for simulating a need for large data storage.  The decision for the usernode was primarily made because of the availability of the c220g1 nodes. We recognized that Palmetto uses the user node as an entry point and we felt the node did not need a specific configuration, thus the availability/capability of the c220g1 node was used. 
 
-Finally, the compute nodes were selected based on variability and availability. Palmetto contains various computational nodes with varying CPU types, memory, network, and disk space. In the table below, we can see the comparisons of the c4130 and c6320 nodes. 
+Finally, the compute nodes were selected based on variability and availability. Palmetto contains various computational nodes with varying CPU types, memory, network, and disk space. In the table below, we can see the comparisons of the c4130 and c6320 nodes. We felt the varying CPU and GPU specifications made these nodes appropriate in our Palmetto Cluster model. 
 
 | Node  | CPU  | Disk | GPU |
 |---|---|---|---|
 | c4130  | Two Intel E5-2683 v3 14-core CPUs at 2.00 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs  |Two Tesla K40m GPUs |
 | c6320  | Two Intel E5-2680 v3 12-core processors at 2.50 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs | N/A |
-
-
-c6320
-84 nodes (Haswell, 28 core)
-CPU
-Two Intel E5-2683 v3 14-core CPUs at 2.00 GHz (Haswell)
-RAM
-256GB ECC Memory
-Disk   
-Two 1 TB 7.2K RPM 3G SATA HDDs
-NIC
-Dual-port Intel 10Gbe NIC (X520)
-NIC 
-Qlogic QLE 7340 40 Gb/s Infiniband HCA (PCIe v3.0, 8 lanes)
-
-
-c4130  
-2 nodes (Haswell, 28 core, two GPUs)
-CPU   
-Two Intel E5-2680 v3 12-core processors at 2.50 GHz (Haswell)
-RAM   
-256GB ECC Memory
-Disk 
-Two 1 TB 7.2K RPM 3G SATA HDDs
-GPU  
-Two Tesla K40m GPUs
-NIC 
-Dual-port Intel 1Gbe NIC (i350)
-NIC 
-Dual-port Intel 10Gbe NIC (X710)
-NIC 
-Qlogic QLE 7340 40 Gb/s Infiniband HCA (PCIe v3.0, 8 lanes)
-
-> A section explaining why the network topology and computing structure of the CloudLab profile can be considered similar to the architecture of the selected XSEDE/Clemson resource. Citations describing the original architecture must be provided to justify these explanations.
-
-
 
 # Software Infastructure Deployment 
 
