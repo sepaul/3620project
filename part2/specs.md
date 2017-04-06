@@ -33,21 +33,13 @@ The nodes were selected to represent a feature we thought was important related 
 
 For our user node, parallel file system node, and large memory nodes we selected the Wisconsin CloudLab c220g1 node setup. Palmetto Cluster contains 6 large memory nodes that sum to over 38TB of memory and we represented this by each large memory node being a c220g1 which contains two 1.2TB 10K RPM 6G SAS SFF HDDs and one Intel DC S3500 480 GB 6G SATA SSDs each. Similarly, Palmetto contains large scratch spaces, specifically scratch1 which is the parallel file system, so we used the c220g1 configuration for this purpose as well. The large storage seemed consistent with the Palmetto Cluster set up and would be beneficial for simulating a need for large data storage.  The decision for the usernode was primarily made because of the availability of the c220g1 nodes. We recognized that Palmetto uses the user node as an entry point and we felt the node did not need a specific configuration, thus the availability/capability of the c220g1 node was used. 
 
+Finally, the compute nodes were selected based on variability and availability. Palmetto contains various computational nodes with varying CPU types, memory, network, and disk space. In the table below, we can see the comparisons of the c4130 and c6320 nodes. 
 
-c240g1  
-10 nodes (Haswell, 16 core, 14 disks)
-CPU  
-Two Intel E5-2630 v3 8-core CPUs at 2.40 GHz (Haswell w/ EM64T)
-RAM
-128GB ECC Memory (8x 16 GB DDR4 1866 MHz dual rank RDIMMs)
-Disk 
-Two Intel DC S3500 480 GB 6G SATA SSDs
-Disk
-Twelve 3 TB 3.5" HDDs donated by Seagate
-NIC
-Dual-port Intel X520-DA2 10Gb NIC (PCIe v3.0, 8 lanes)
-NIC 
-Onboard Intel i350 1Gb
+| Node  | CPU  | Disk | GPU |
+|---|---|---|---|
+| c4130  | Two Intel E5-2683 v3 14-core CPUs at 2.00 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs  |Two Tesla K40m GPUs |
+| c6320  | Two Intel E5-2680 v3 12-core processors at 2.50 GHz (Haswell)  | Two 1 TB 7.2K RPM 3G SATA HDDs | N/A |
+
 
 c6320
 84 nodes (Haswell, 28 core)
