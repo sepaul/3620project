@@ -1,0 +1,32 @@
+ RESULTS FILE FOR PALMETTO SIM CLUSTER
+ =====================================
+
+ 64 Processes - mpirun -np 64 ./main.py
+ _____________________________________
+ Testing if list is unique...:True
+ The Number of Unique Jobs is:672074
+     ---19.7675879002 seconds ---
+
+
+
+ 32 Processes - mpirun -np 32 ./main.py 
+ _____________________________________
+ Testing if list is unique...:True
+ The Number of Unique Jobs is:672074
+     ---36.1649968624 seconds ---
+
+
+
+ 16 Processes - mpirun -np 16 ./main.py
+ _____________________________________
+ Testing if list is unique...:True
+ The Number of Unique Jobs is:672074
+     ---79.0037920475 seconds ---
+
+
+
+  8 Processes - mpirun -np  8 ./main.py
+ _____________________________________
+ Testing if list is unique...:True
+ The Number of Unique Jobs is:672074
+     ---235.770670891 seconds ---
