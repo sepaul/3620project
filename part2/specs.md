@@ -126,6 +126,3 @@ The results from running our script on our Palmetto Simulation Cluster shows tha
 
      ---235.770670891 seconds ---
 ```
->A section describing validation results. 
-
-
