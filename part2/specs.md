@@ -43,7 +43,7 @@ Finally, the compute nodes were selected based on variability and availability. 
 > Extra CloudLab node information can be found at : http://docs.cloudlab.us/hardware.html
 
 # Software Infastructure Deployment 
-
+d
 The script below is used to set up the software configurations of nodes for parallel processing on the Cloudlab Palmetto Cluster model. For this script to work, you must first be sure to put the node IP's into a file named ip.txt and make sure that it is in the same directory as the script so that it can be read. The script begins by clearing the screen and then getting the username from the command line arguments. If a username cannot be found, then an error will be shown. But, if a username is found, then the script will take that username and ssh into the host. Once this is complete it will run a sudo apt-get -y install on the necessary programs. It will install mpich2, gfortran, g++, and python-mpi4y. It will also check to see if these are already installed and update them if needed. Finally, a message of a successful installation will be presented and the script will be complete. 
 
 ```
@@ -58,8 +58,7 @@ clear
 # Get username from argv[1]
 if [ -z "$1" ]
 then
-    echo "ERR! USE ./part2build.sh <username>"
-    exit
+    echo "ERR! USE ./part2build.sh <username>"    exit
 else
     USERNAME=$1
 fi
@@ -68,8 +67,7 @@ fi
 while read HOST; do
   echo "" |  ssh -t -p 22 $USERNAME@$HOST      "sudo apt-get update                &&
                                  	           sudo apt-get -y install mpich2      &&
-                                 		        sudo apt-get -y install gfortran    &&
-                                 		        sudo apt-get -y install g++         &&
+                                 		        sudo apt-get -y install gfortran    &&                                 		        sudo apt-get -y install g++         &&
                                  		        sudo apt-get -y install python-mpi4py >> INSTALL_RESULTS
                                  	           ";
   echo "======================================="
@@ -82,6 +80,52 @@ while read HOST; do
 done < ips.txt
 ``` 
 # Results and Validation
+The results from running our script on our Palmetto Simulation Cluster shows that parallelization was effectively achieved.  As the number of processors increased, the totally time needed to find the number of unique jobs decreased as a result. For example, when running the script with only 8 processors, it takes about 236 seconds to find the number of unique jobs but when 64 processors are used it only takes about 20 seconds. Because of results from running the script on our Cluster, it can be concluded that our cluster is a good model because everything ran correctly and efficiently. 
+
+```
+ RESULTS FILE FOR PALMETTO SIM CLUSTER
+
+ =====================================
+
+ 64 Processes - mpirun -np 64 ./main.py
+ _____________________________________
+ Testing if list is unique...:True
+
+ The Number of Unique Jobs is:672074
+
+     ---19.7675879002 seconds ---
+
+
+
+ 32 Processes - mpirun -np 32 ./main.py 
+ _____________________________________
+
+ Testing if list is unique...:True
+
+ The Number of Unique Jobs is:672074
+     ---36.1649968624 seconds ---
+
+
+
+ 16 Processes - mpirun -np 16 ./main.py
+ _____________________________________
+
+ Testing if list is unique...:True
+
+ The Number of Unique Jobs is:672074
+
+     ---79.0037920475 seconds ---
+
+
+
+  8 Processes - mpirun -np  8 ./main.py
+ _____________________________________
+ Testing if list is unique...:True
+
+ The Number of Unique Jobs is:672074
+
+     ---235.770670891 seconds ---
+```
 >A section describing validation results. 
 
 
