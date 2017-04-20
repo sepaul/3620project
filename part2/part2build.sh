@@ -29,11 +29,15 @@ while read HOST; do
                                                 python setup.py build   &&
                                                 python setup.py build --mpi=other_mpi   &&
                                                 python setup.py install &&
+                                                
+                                                #download and install openmpi
                                                 wget https://www.open-mpi.org/software/ompi/v2.1/downloads/openmpi-2.1.0-1.src.rpm  &&
                                                 gunzip -c openmpi-2.1.0.tar.gz | tar xf -   &&
                                                 cd openmpi-2.1.0    &&
                                                 ./configure --prefix=/usr/local &&
                                                 make all install>> INSTALL_RESULTS &&
+                                                
+                                                #install the orange fs dependencies
                                                 sudo apt-get install -y gcc flex bison \
                                                 libssl-dev libdb-dev linux-source perl \
                                                 make autoconf linux-headers-`uname -r` zip \
@@ -44,6 +48,8 @@ while read HOST; do
                                                 cp /boot/config-version-type .config &&
                                                 make oldconfig &&
                                                 make prepare &&
+                                                
+                                                #download and install orange fs
                                                 wget https://s3.amazonaws.com/download.orangefs.org/current/source/orangefs-2.9.6.tar.gz &&
                                                 tar -xzf orangefs-2.9.6.tar.gz &&
                                                 cd orangefs-2.9.6  &&
@@ -54,6 +60,13 @@ while read HOST; do
                                                 make kmod_prefix=/opt/orangefs kmod_install 
                                                 
                                  	           ";
+                                               
+   #create user student and set up keyless ssh betweeen nodes                                          
+   cat ~/.ssh/id_rsa.pub | ssh -p 22 $USERNAME@$HOST 'useradd student; umask 0077; \
+   mkdir -p ~student/.ssh; cat >> ~student/.ssh/authorized_keys && echo "Key copied"'
+   
+   #copy the private key to all of the nodes
+   cat ~/.ssh/id_rsa | ssh -p 22 $USERNAME@$HOST 'cat > .ssh/id_rsa'
   echo "======================================="
   echo "======================================="
   echo " $HOST install complete                "
