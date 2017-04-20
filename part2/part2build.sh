@@ -33,7 +33,26 @@ while read HOST; do
                                                 gunzip -c openmpi-2.1.0.tar.gz | tar xf -   &&
                                                 cd openmpi-2.1.0    &&
                                                 ./configure --prefix=/usr/local &&
-                                                make all install>> INSTALL_RESULTS
+                                                make all install>> INSTALL_RESULTS &&
+                                                sudo apt-get install -y gcc flex bison \
+                                                libssl-dev libdb-dev linux-source perl \
+                                                make autoconf linux-headers-`uname -r` zip \
+                                                openssl automake autoconf patch g++ &&
+                                                cd /usr/src/linux-source-version &&
+                                                tar -xjf linux-source-version.tar.bz2 &&
+                                                cd linux-source-version &&
+                                                cp /boot/config-version-type .config &&
+                                                make oldconfig &&
+                                                make prepare &&
+                                                wget https://s3.amazonaws.com/download.orangefs.org/current/source/orangefs-2.9.6.tar.gz &&
+                                                tar -xzf orangefs-2.9.6.tar.gz &&
+                                                cd orangefs-2.9.6  &&
+                                                ./configure --prefix=/opt/orangefs &&
+                                                make &&
+                                                make install &&
+                                                make kmod &&
+                                                make kmod_prefix=/opt/orangefs kmod_install 
+                                                
                                  	           ";
   echo "======================================="
   echo "======================================="
